@@ -5,9 +5,10 @@ app = Flask(__name__)
 import sqlite3
 
 import dotenv 
+from dotenv import load_dotenv
 import os
 
-load_dotenv
+load_dotenv()
 
 PAGE_PATH = os.getenv('PAGE_PATH')
 
