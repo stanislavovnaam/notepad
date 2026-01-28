@@ -10,7 +10,7 @@ import os
 
 load_dotenv()
 
-PAGE_PATH = os.getenv('PAGE_PATH')
+PAGE_PATH = os.getenv('PAGE_PATH','/')
 
 def init():
     conn = sqlite3.connect("data.db")
@@ -101,3 +101,4 @@ def cmd_sql():
     
 if __name__ == "__main__":
     app.run(debug=True)
+
